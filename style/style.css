@@ -1,0 +1,97 @@
+@import url("https://fonts.googleapis.com/css2?family=Quicksand:wght@400;700&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-color: white;
+  font-family: 'Quicksand', sans-serif;
+}
+
+.container {
+  width: 60vw;
+  height: 100vh;
+  margin: 0 auto;
+}
+
+.container nav {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 1rem 0;
+}
+
+.container nav .menu {
+  height: 2rem;
+  width: 2rem;
+  background-color: black;
+  cursor: pointer;
+  -webkit-transition: all 0.5s ease-in-out;
+  transition: all 0.5s ease-in-out;
+}
+
+.container nav .menu-after {
+  -webkit-transform: rotate(45deg);
+          transform: rotate(45deg);
+}
+
+.container nav .brand {
+  font-size: 3rem;
+  font-weight: 700;
+  color: black;
+}
+
+.container .menu-bar {
+  display: none;
+  background-color: black;
+  width: 10rem;
+  margin: 0 0 1rem 0;
+  -webkit-transition: all 1s ease-in-out;
+  transition: all 1s ease-in-out;
+}
+
+.container .menu-bar .list {
+  list-style: none;
+}
+
+.container .menu-bar .list .list-item {
+  padding: 1rem;
+}
+
+.container .menu-bar .list .list-item a {
+  text-decoration: none;
+  color: white;
+}
+
+.container .empty {
+  height: calc(100vh - 92px - 52px);
+  background-color: black;
+}
+
+.container .empty-after {
+  height: calc(100vh - 92px - 68px - 52px);
+}
+
+.container footer .ftr-txt {
+  padding: 1rem 0;
+}
+
+@media screen and (max-width: 768px) {
+  .container footer .ftr-txt {
+    font-size: 0.8rem;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .container {
+    width: 90vw;
+  }
+}
+/*# sourceMappingURL=style.css.map */

@@ -1,0 +1,93 @@
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@400;700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+}
+body {
+    background-color: white;
+    font-family: 'Quicksand', sans-serif;
+}
+
+.container {
+    width: 60vw;
+    height: 100vh;
+    margin: 0 auto;
+
+    nav {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 1rem 0;
+        .menu {
+            height: 2rem;
+            width: 2rem;
+            // border-radius: 0;
+            background-color: black;
+            cursor: pointer;
+            transition: all 0.5s ease-in-out;
+            // transition: border-radius 0.5s ease-in-out;
+
+            // &:active {
+            //     border-radius: 50px;
+            // }
+        }
+        .menu-after {
+            transform: rotate(45deg);
+        }
+
+        .brand {
+            font-size: 3rem;
+            font-weight: 700;
+            color: black;
+        }
+    }
+    .menu-bar {
+        display: none;
+        // visibility: hidden;
+        // border: 2px solid black;
+        // border-radius: 10px;
+        background-color: black;
+        width: 10rem;
+        margin: 0 0 1rem 0;
+        transition: all 1s ease-in-out;
+        // padding: 1rem;
+
+        .list {
+            list-style: none;
+            
+            .list-item {
+                padding: 1rem;
+
+                a {
+                    text-decoration: none;
+                    color: white;
+                }
+            }
+        }
+    }
+
+    .empty {
+        height: calc(100vh - 92px - 52px);
+        background-color: black;
+        // transition: height 0.5s ease-in;
+    }
+
+    .empty-after {
+        height: calc(100vh - 92px - 68px - 52px);
+    }
+
+    footer {
+        .ftr-txt {
+            padding: 1rem 0;
+
+            @media screen and (max-width: 768px) {
+                font-size: 0.8rem;
+            }
+        }
+    }
+    
+    @media screen and (max-width: 768px) {
+        width: 90vw;
+    }
+}
