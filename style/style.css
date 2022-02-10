@@ -76,7 +76,7 @@ body {
 }
 
 .container .empty-after {
-  height: calc(100vh - 92px - 68px - 52px);
+  height: calc(100vh - 92px - 68px - 104px);
 }
 
 .container footer .ftr-txt {
