@@ -1,7 +1,20 @@
-
 # Menu
 
 A simple webpage to showcase the basic analogy of Dropdown Menu.
+
+## Resources
+
+- HTML
+- JS
+- SCSS
+
+## Hosting
+
+- Hosted on Github
+
+## Status
+
+Finished
 
 ## Visit Here
 
